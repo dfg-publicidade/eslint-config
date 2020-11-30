@@ -1,0 +1,8 @@
+{
+    "name": "@dfgpublicidade/eslint-config",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "peerDependencies": {
+        "eslint": ">= 3"
+    }
+}
