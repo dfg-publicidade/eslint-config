@@ -85,7 +85,41 @@ module.exports = {
             }
         ],
         "@typescript-eslint/member-ordering": "error",
-        "@typescript-eslint/naming-convention": "error",
+        "@typescript-eslint/naming-convention": ["error", {
+            "selector": [
+                "variable",
+                "function",
+                "parameter",
+                "classProperty",
+                "objectLiteralProperty",
+                "typeProperty",
+                "parameterProperty",
+                "objectLiteralMethod",
+                "typeMethod",
+                "accessor",
+                "typeParameter"
+            ],
+            "format": ['camelCase'],
+            "modifiers": ["requiresQuotes"],
+            "leadingUnderscore": "allow"
+        }, {
+            "selector": [
+                "class",
+                "interface",
+                "typeAlias",
+                "enum"
+            ],
+            "format": ['PascalCase'],
+            "modifiers": ["requiresQuotes"],
+            "leadingUnderscore": "allow"
+        }, {
+            "selector": [
+                "enumMember"
+            ],
+            "format": ['UPPER_CASE'],
+            "modifiers": ["requiresQuotes"],
+            "leadingUnderscore": "allow"
+        }],
         "@typescript-eslint/no-empty-function": "error",
         "@typescript-eslint/no-empty-interface": "error",
         "@typescript-eslint/no-explicit-any": "off",
