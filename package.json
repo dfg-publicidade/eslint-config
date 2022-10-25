@@ -2,6 +2,9 @@
     "name": "@dfgpublicidade/eslint-config",
     "version": "1.0.0",
     "license": "UNLICENSED",
+    "devDependencies": {
+        "@typescript-eslint/parser": "^5.41.0"
+    },
     "peerDependencies": {
         "eslint": ">= 7"
     }
